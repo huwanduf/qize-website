@@ -2,8 +2,17 @@
   "use strict";
 
   const body = document.body;
+  const header = document.querySelector(".site-header");
   const menuButton = document.querySelector("[data-menu-toggle]");
   const navLinks = document.querySelectorAll(".desktop-nav a");
+
+  if (header) {
+    const updateHeader = function () {
+      header.classList.toggle("scrolled", window.scrollY > 16);
+    };
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  }
 
   if (menuButton) {
     menuButton.addEventListener("click", function () {
