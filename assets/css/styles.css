@@ -1654,13 +1654,13 @@ h3 {
   min-height: 44px;
   padding: 10px 18px;
   border: 1px solid var(--ink);
-  color: var(--ink);
-  background: transparent;
+  color: var(--white);
+  background: var(--ink);
 }
 
 .header-cta:hover {
-  color: var(--white);
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--orange);
 }
 
 .btn {
